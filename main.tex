@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 天文部誌「Super Nova」　使用エンジン：LuaLaTeX
+%
+% updated 09 Apr, 2021
+%
+% (c) Yosuke MORIYAMA
+% 上記の行を残してつかうこと．2次配布可．ご利用は計画的に．
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{classes/supernova}% 天文部誌用のプリアンブル・マクロの読込み
+%\usepackage[backend=biber,style=ieee]{biblatex}
+%\bibliography{references.bib}
+%\include{preamble} % 投稿された記事の中に追加パッケージが必要な場合にまとめとく
+
+%%%%%%%%   表紙・ごあいさつ・目次   %%%%%%%%%
+\begin{document}
+\gtfamily\sffamily % 本文をゴシック体サンセリフ体に統一する
+\includepdf[noautoscale=true, fitpaper]{cover/20yy_sample_supernova_cover.pdf} %表紙
+\frontmatter
+\setcounter{page}{1} %ページカウンタのセット
+\subfile{sections/goaisatu} % ご挨拶ページ
+\setcounter{tocdepth}{1} % 目次に表示する見出しの深さ指定 0:chapter 1:section 2:subsection 3:subsubsection
+\tableofcontents % 目次
+\cleartooddpage% 奇数ページまでジャンプ
+
+\mainmatter
+%%%%%%%%%   ここから本編   %%%%%%%%
+% \subfile{hogehoge} % hogehoge.texを読み込む
+\subfile{sections/contents}
+
+%%%%%%%%   付録・編集後記   %%%%%%%%
+\appendix
+\subfile{sections/appendix} % 付録
+
+\backmatter % あとがき、編集後記はこの下に
+\subfile{sections/kouki} % 編集後記
+%\printbibliography[title=参考文献]
+%\addcontentsline{toc}{chapter}{参考文献}
+% \includepdf[noautoscale=true, fitpaper]{cover/20yy_xxxx_atogaki.pdf}
+\cleardoublepage
+\cleartoevenpage % 奇数ページまでジャンプ
+\includepdf[noautoscale=true, fitpaper]{cover/20yy_sample_supernova_cover_back.pdf} % 裏表紙
+\end{document}

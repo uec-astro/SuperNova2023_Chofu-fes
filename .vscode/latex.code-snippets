@@ -1,0 +1,106 @@
+{
+  "subfile template": {
+      "prefix": "subfile",
+      // "scope": "text.tex.latex",
+      "body": [
+        "%! TEX root = ../main.tex",
+        "\\documentclass[${1}]{subfiles}",
+        "",
+        "\\begin{document}",
+        "",
+        "\\end{document}",
+        ""
+      ],
+      "description": "subfile template"
+    },
+  "doubletable": {
+      "prefix": "doubletable",
+      "body": [
+          "\\begin{table}[H]",
+          "  \\centering",
+          "  \\begin{minipage}{0.4\\columnwidth}",
+          "    \\centering",
+          "    \\caption{${1}}",
+          "    \\label{tab:${2:hidari}}",
+          "    \\begin{tabular}{${3:cc}}\\hline",
+          "       ${4}",
+          "    \\end{tabular}",
+          "  \\end{minipage}",
+          "  \\begin{minipage}{0.4\\columnwidth}",
+          "    \\centering",
+          "    \\caption{${5}}",
+          "    \\label{tab:${6:migi}}",
+          "    \\begin{tabular}{${7:cc}}\\hline",
+          "       ${8}",
+          "    \\end{tabular}",
+          "  \\end{minipage}",
+          "\\end{table}",
+      ],
+      "description": "2つ横に並んだ表"
+  },
+  "doublefigure": {
+      "prefix": "doublefigure",
+      "body": [
+          "\\begin{figure}[H]",
+          "  \\centering",
+          "  \\begin{minipage}{0.4\\columnwidth}",
+          "    \\centering",
+          "    \\includegraphics[width=\\columnwidth]{${1:hidari.png}}",
+          "    \\caption{${2}}",
+          "    \\label{fig:${3:hidari}}",
+          "  \\end{minipage}",
+          "  \\begin{minipage}{0.4\\columnwidth}",
+          "    \\centering",
+          "    \\includegraphics[width=\\columnwidth]{${4:migi.png}}",
+          "    \\caption{${5}}",
+          "    \\label{fig:${6:migi}}",
+          "  \\end{minipage}",
+          "\\end{figure}",
+      ],
+      "description": "2つ横に並んだ表"
+  },
+  "figure": {
+      "prefix": "figure",
+      "body": [
+          "\\begin{figure}",
+          "  \\centering",
+          "  \\includegraphics[width=.5\\textwidth]{$1}",
+          "  \\caption{$2}",
+          "  \\label{fig:$3}",
+          "\\end{figure}",
+      ]
+  },
+  "table": {
+      "prefix": "table",
+      "body": [
+          "\\begin{table}",
+          "  \\centering",
+          "  \\caption{$2}",
+          "  \\label{tab:$3}",
+          "  \\begin{tabular}{$4}\\hline",
+          "    $5",
+          "  \\end{tabular}",
+          "\\end{table}",
+      ]
+  },
+  "tcolorbox": {
+    "prefix": "tcolorbox",
+    "body":[
+      "\\begin{tcolorbox}[title=${1}, breakable]",
+      "${2}",
+      "\\end{tcolorbox}",
+    ]
+  },
+  "lstlisting": {
+    "prefix": "lstlisting",
+    "body":[
+      "\\begin{lstlisting}[caption=${1}, label=${2}]",
+      "${3}",
+      "\\end{lstlisting}",
+    ]
+  },
+  "verb": {
+    "prefix": "verb",
+    "body":["\\verb|${1}|"]
+  }
+}

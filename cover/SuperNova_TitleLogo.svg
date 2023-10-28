@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.46 244.16">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Impact, Impact;
+        font-size: 199.18px;
+        letter-spacing: -.03em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: HaranoAjiGothic-Heavy-90ms-RKSJ-H, 'Harano Aji Gothic';
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <text class="cls-1" transform="translate(0 178.32) scale(.6 1)"><tspan x="0" y="0">Super Nova</tspan></text>
+    <text class="cls-2" transform="translate(54.83 42.08)"><tspan x="0" y="0">天文部誌</tspan></text>
+  </g>
+</svg>
