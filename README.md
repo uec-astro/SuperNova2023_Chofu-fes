@@ -1,4 +1,4 @@
-# 天文部誌SuperNovaを編集するためのテンプレート
+# 天文部誌SuperNova2023年調布祭号
 [記事](https://zenn.dev/being/articles/how-to-use-my-latex)と[GitHub](https://github.com/being24/latex-template-ja)を参考にして、部誌を作るためのテンプレート作ったよ
 
 使い方とかはout/super_nova_20yy.pdfにサンプルとして書いた。
